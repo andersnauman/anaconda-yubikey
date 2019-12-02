@@ -3,7 +3,9 @@ This addon will generate and save the LUKS-descryption key into a yubikey as a s
 
 [Yubico Whitepaper about Static Password](https://www.yubico.com/wp-content/uploads/2015/11/Yubico_WhitePaper_Static_Password_Function.pdf`)
 
-Please make sure that you run `make package` on the same system as the client you trying to install. There are dependencies that assumes that the platforms are the same.
+Please make sure that you run `make package` on the same system/version as the client you trying to install. There are dependencies that assumes that the platforms are the same.
+
+Verified on CentOS 8 Stream
 
 # Install/Usage
 ```
@@ -22,8 +24,8 @@ Commands:
     ## Add to a webserver
     python3 -m http.server
 
-    ## Include into a netinstall (default name is updates.img)
-    inst.updates=http://1.2.3.4:8000
+    ## Include into a netinstall
+    inst.updates=http://1.2.3.4:8000/updates.img
 ```
 
 # Todo
